@@ -1,4 +1,4 @@
-# Throwaway project copies, cloned fresh each run (copy_project.sh)
+# Throwaway project copies inside each run folder, cloned fresh (copy_project.sh)
 sources/
 
 # Machine-only Claude Code settings

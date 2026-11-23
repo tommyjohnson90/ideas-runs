@@ -99,7 +99,7 @@
       "Read(~/.claude/.credentials.json)",
       "Read(~/.bash_history)",
       "Read(~/.zsh_history)",
-      "Edit(/sources/**)",
+      "Edit(/runs/**/sources/**)",
       "Edit(/.claude/**)",
       "Bash(env)",
       "Bash(printenv*)",
