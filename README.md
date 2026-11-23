@@ -6,7 +6,7 @@ Tom's ideas workspace, shared by the P620 and the X1. Clone it as `~/Dev/ideas`;
 | :- | :- |
 | `.claude/settings.json` | turns on agent teams for this folder only; read access to everything except secret files; writes only to `runs/` |
 | `runs/<slug>/<date>-<mode>/` | one folder per interview, research, critique or board run (brief, findings, report, `sources.md`) |
-| `sources/` | fresh copies of project repos for a run, renamed so their CLAUDE.md, AGENTS.md and `.claude/` don't load; ignored by git |
+| `runs/.../sources/<repo>/` | that run's fresh copy of a project repo, renamed so its CLAUDE.md, AGENTS.md and `.claude/` don't load; ignored by git |
 
 ## Once per machine
 
@@ -24,6 +24,6 @@ Accepting the trust prompt matters: until then Claude Code ignores this folder's
 The skills do this for you, so this is only what happens:
 
 - **Start:** `git pull --ff-only`, so a run begun on the other machine carries on here.
-- **End:** the run folder is committed and pushed. Only `runs/` is saved; `sources/` and anything secret stay local.
+- **End:** the run folder is committed and pushed. Only the run folder is saved; its `sources/` copies and anything secret stay local.
 
 If a pull or push fails (offline, or both machines saved at once), run `git status`, then `git pull --rebase && git push`.
