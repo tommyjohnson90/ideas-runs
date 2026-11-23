@@ -1,0 +1,19 @@
+# Throwaway project copies, cloned fresh each run (copy_project.sh)
+sources/
+
+# Machine-only Claude Code settings
+.claude/settings.local.json
+
+# Secrets never belong here
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets/
+
+# Editor and OS clutter
+.DS_Store
+*.swp
